@@ -7,6 +7,10 @@ function age() {
   var m2 = 1 + date.getMonth();
   var y2 = date.getFullYear();
   var month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  if (d1 == null || d1 == "", m1 == null || m1 == "", y1 == null || y1 == "") {
+      alert("Please Fill All Required Field");
+      return false;
+    }
   if(d1 > d2){
    d2 = d2 + month[m2 - 1];
    m2 = m2 - 1;
